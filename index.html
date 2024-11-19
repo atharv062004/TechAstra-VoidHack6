@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px 30px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .top-right {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .top-right a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #007BFF;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea, button {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        input[type="file"] {
+            padding: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-right"><a href="login.html">Sign In</a></div>
+        <h1>Sign Up</h1>
+        <form id="signup-form">
+            <h2>Basic Details</h2>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="college_name" placeholder="College Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="phone_number" placeholder="Phone Number" required>
+            <input type="number" name="age" placeholder="Age" required>
+            <input type="text" name="degree" placeholder="Degree" required>
+            <input type="text" name="year" placeholder="Year" required>
+
+            <h2>Internship Details</h2>
+            <input type="date" name="start_date" required>
+            <input type="text" name="company_name" placeholder="Company Name" required>
+            <textarea name="company_address" placeholder="Company Address" required></textarea>
+            <input type="text" name="external_mentor_name" placeholder="Mentor Name" required>
+            <input type="text" name="external_mentor_contact" placeholder="Mentor Contact" required>
+            <input type="email" name="external_mentor_email" placeholder="Mentor Email" required>
+            <input type="text" name="company_registration_number" placeholder="Registration Number" required>
+            <input type="text" name="city" placeholder="City" required>
+            <input type="number" name="stipend_amount" placeholder="Stipend Amount" required>
+            <label>Upload Offer Letter (PDF Only)</label>
+            <input type="file" name="offer_letter" accept="application/pdf" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
